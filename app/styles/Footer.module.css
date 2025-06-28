@@ -1,0 +1,17 @@
+/* ===== FOOTER ===== */
+.footer {
+  height: 3rem;
+  background-color: var(--nav-background);
+  color: var(--nav-text);
+  text-align: center;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerText {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+}

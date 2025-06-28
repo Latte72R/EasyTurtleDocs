@@ -1,0 +1,251 @@
+/* ===== CSS VARIABLES ===== */
+:root {
+  /* Base colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-dark-gray: #171717;
+  --color-medium-gray: #2c2c2c;
+  --color-light-gray: #d1d5db;
+  --color-very-light-gray: #f3f4f6;
+  --color-ultra-light-gray: #f9fafb;
+  --color-blue-primary: #0891b2;
+  --color-blue-dark: #0e7490;
+  --color-blue-light: #67e8f9;
+  --color-blue-accent: #38bdf8;
+  --color-blue-very-light: #e0f1f2;
+  --color-yellow-accent: #fbbf24;
+  --color-dark-blue: #164e63;
+  --color-border-light: #e5e7eb;
+  --color-dark-bg: #0f172a;
+  --color-medium-bg: #1e293b;
+  --color-light-bg: #334155;
+  --color-dark-border: #475569;
+  --color-light-text: #f8fafc;
+  --color-medium-text: #e2e8f0;
+  
+  /* Alpha colors */
+  --alpha-white-20: rgba(255, 255, 255, 0.2);
+  --alpha-white-10: rgba(255, 255, 255, 0.1);
+  --alpha-black-10: rgba(0, 0, 0, 0.1);
+  --alpha-black-05: rgba(0, 0, 0, 0.05);
+  --alpha-blue-20: rgba(8, 145, 178, 0.2);
+  --alpha-blue-10: rgba(8, 145, 178, 0.1);
+  
+  /* Global colors */
+  --background: var(--color-blue-very-light);
+  --foreground: var(--color-dark-gray);
+  --primary-color: var(--color-blue-primary);
+  --primary-color-hover: var(--color-blue-dark);
+  --text-color: var(--color-medium-gray);
+  --border-color: var(--color-light-gray);
+  --shadow: 0 2px 8px var(--alpha-black-10);
+  
+  /* Navigation colors */
+  --nav-background: var(--color-blue-primary);
+  --nav-text: var(--color-very-light-gray);
+  --nav-text-hover: var(--color-yellow-accent);
+  --nav-border: var(--alpha-white-20);
+  --nav-hover-bg: var(--alpha-black-10);
+  
+  /* Sub navigation colors */
+  --subnav-background: var(--color-very-light-gray);
+  --subnav-text: var(--color-medium-gray);
+  --subnav-border: var(--color-border-light);
+  --subnav-border-light: var(--color-very-light-gray);
+  --subnav-hover-bg: var(--color-blue-very-light);
+  
+  /* Section colors */
+  --section-background: var(--color-very-light-gray);
+  --section-title-color: var(--color-blue-primary);
+  --section-text-color: var(--color-medium-gray);
+  --section-border: var(--color-light-gray);
+  --section-code-background: var(--color-light-gray);
+  
+  /* Social link colors */
+  --social-bg: var(--color-ultra-light-gray);
+  --social-border: var(--color-border-light);
+  --social-text: var(--color-medium-gray);
+  --social-hover-bg: var(--color-blue-very-light);
+  --social-hover-shadow: var(--alpha-blue-20);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Alpha colors for dark mode */
+    --alpha-white-15-dark: rgba(255, 255, 255, 0.15);
+    --alpha-white-10-dark: rgba(255, 255, 255, 0.1);
+    --alpha-white-05-dark: rgba(255, 255, 255, 0.05);
+    --alpha-blue-25-dark: rgba(8, 145, 178, 0.25);
+    
+    /* Global colors - dark mode */
+    --background: var(--color-dark-bg);
+    --foreground: var(--color-light-text);
+    --primary-color: var(--color-blue-light);
+    --primary-color-hover: var(--color-blue-accent);
+    --text-color: var(--color-medium-text);
+    --border-color: var(--color-dark-border);
+    --shadow: 0 2px 8px var(--alpha-white-15-dark);
+    
+    /* Navigation colors - dark mode */
+    --nav-background: var(--color-blue-primary);
+    --nav-text: var(--color-very-light-gray);
+    --nav-text-hover: var(--color-yellow-accent);
+    --nav-border: var(--alpha-white-20);
+    --nav-hover-bg: var(--alpha-white-10-dark);
+    
+    /* Sub navigation colors - dark mode */
+    --subnav-background: var(--color-light-bg);
+    --subnav-text: var(--color-medium-text);
+    --subnav-border: var(--color-dark-border);
+    --subnav-border-light: var(--color-dark-border);
+    --subnav-hover-bg: var(--color-dark-border);
+    
+    /* Section colors - dark mode */
+    --section-background: var(--color-medium-bg);
+    --section-title-color: var(--color-blue-light);
+    --section-text-color: var(--color-medium-text);
+    --section-border: var(--color-dark-border);
+    --section-code-background: var(--color-dark-border);
+    
+    /* Social link colors - dark mode */
+    --social-bg: var(--color-light-bg);
+    --social-border: var(--color-dark-border);
+    --social-text: var(--color-medium-text);
+    --social-hover-bg: var(--color-dark-blue);
+    --social-hover-shadow: var(--alpha-blue-25-dark);
+  }
+}
+
+/* ===== GLOBAL RESET ===== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-noto-sans-jp), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* ===== GLOBAL LINK STYLES ===== */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* ===== GLOBAL HEADING STYLES ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* ===== GLOBAL PARAGRAPH STYLES ===== */
+p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* ===== GLOBAL CODE STYLES ===== */
+code {
+  background-color: var(--border-color);
+  border-radius: 4px;
+  font-family: var(--font-noto-sans-mono), monospace;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* ===== GLOBAL TABLE STYLES ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: var(--border-color);
+  font-weight: 600;
+}
+
+/* ===== GLOBAL LIST STYLES ===== */
+ul, ol {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== SELECTION STYLES ===== */
+::selection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* ===== DARK MODE ADJUSTMENTS ===== */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  
+  code {
+    background-color: var(--alpha-white-10-dark);
+  }
+  
+  pre {
+    background-color: var(--alpha-white-05-dark);
+  }
+  
+  th {
+    background-color: var(--alpha-white-10-dark);
+  }
+}

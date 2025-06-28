@@ -1,0 +1,43 @@
+
+.slideMenu {
+    position: fixed;
+    display: none;
+    top: 3rem;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0.2em);
+    -webkit-backdrop-filter: blur(0.2em);
+    background-color: var(--background);
+    padding: 2em 0em;
+    box-shadow: 0 0.2em 0.4em rgba(10, 10, 10, 0.8);
+    opacity: 0;
+    transition: 0.3s all ease;
+    z-index: 999;
+}
+  
+.slideMenu.open {
+    opacity: 1;
+    display: block;
+}
+
+.menuLink {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: var(--primary-color);
+    padding: 0.2em 0.2em;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 2em;
+}
+
+.menuLink:hover {
+    color: var(--primary-color-hover);
+}
+
+.divider {
+    height: 0.2em;
+    width: auto;
+    background-color: #555;
+    margin: 1em 1em;
+    border-radius: 0.1em;
+}

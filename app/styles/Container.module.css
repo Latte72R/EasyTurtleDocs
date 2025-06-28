@@ -1,0 +1,72 @@
+
+/* ===== PAGE CONTENT STYLES ===== */
+.container {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: var(--section-background);
+  border-radius: 8px;
+  border: 1px solid var(--section-border);
+}
+
+.container h2 {
+  font-size: 1.75rem;
+  color: var(--section-title-color);
+  border-left: 8px solid var(--section-title-color);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.container p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.container ul {
+  margin-bottom: 1rem;
+}
+
+.container li {
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.container code {
+  background-color: var(--section-code-background);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: var(--font-noto-sans-mono), monospace;
+  font-size: 0.9rem;
+}
+
+.container a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.container a:hover {
+  color: var(--primary-color-hover);
+}
+
+.container table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--table-border);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1.5rem;
+  }
+  
+  .container h1.title {
+    font-size: 1.75rem;
+  }
+  
+  .container h2 {
+    font-size: 1.25rem;
+  }
+}

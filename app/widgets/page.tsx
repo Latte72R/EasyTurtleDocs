@@ -1,0 +1,618 @@
+import { Metadata } from "next";
+import MainContent from "../components/MainContent";
+import Container from "@/app/components/Container";
+
+export const metadata: Metadata = {
+    title: "Widgets",
+    openGraph: {
+        title: "Widgets",
+    },
+    alternates: {
+        canonical: "/widgets",
+    },
+};
+
+export default function TutorialPage() {
+    return (
+        <MainContent>
+            <Container>
+                {/* ウィジェット説明セクション */}
+                <section className="main">
+                    <h2 id="WidgetList">ウィジェットの説明</h2>
+                    <div>
+                        <article>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ウィジェット</th>
+                                        <th>説明</th>
+                                        <th>ドキュメント</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>VarNumber</td>
+                                        <td>変数①を数値②にする</td>
+                                        <td>オリジナル</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VarString</td>
+                                        <td>変数①を文字列②にする</td>
+                                        <td>オリジナル</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VarBoolean</td>
+                                        <td>変数①を真理値②にする</td>
+                                        <td>オリジナル</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Title</td>
+                                        <td>画面タイトルを①にする</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.title"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.title
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ScreenSize</td>
+                                        <td>画面を横幅①、高さ②にする</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.screensize"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.screensize
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Forward</td>
+                                        <td>前方向に①移動する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.forward"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.forward
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Backward</td>
+                                        <td>後方向に①移動する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.backward"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.backward
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Right</td>
+                                        <td>右方向に①度曲げる</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.right"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.right
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Left</td>
+                                        <td>左方向に①度曲げる</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.left"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.left
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>GoTo</td>
+                                        <td>ｘ座標①、ｙ座標②に移動する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.goto"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.goto
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>SetX</td>
+                                        <td>ｘ座標①に移動する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.setx"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.setx
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>SetY</td>
+                                        <td>ｙ座標①に移動する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.sety"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.sety
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>SetHeading</td>
+                                        <td>向きを①度に変更する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.setheading"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.setheading
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Home</td>
+                                        <td>座標と角度を初期状態に戻す</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.home"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.home
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Position</td>
+                                        <td>座標ｘを①、ｙを②に代入する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.position"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.position
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ToWards</td>
+                                        <td>ｘ①、ｙ②への角度を③に代入する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.towards"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.towards
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>XCor</td>
+                                        <td>ｘ座標を①に代入する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.xcor"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.xcor
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>YCor</td>
+                                        <td>ｙ座標を①に代入する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.ycor"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.ycor
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Heading</td>
+                                        <td>角度を①に代入する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.heading"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.heading
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Distance</td>
+                                        <td>ｘ①、ｙ②への距離を③に代入する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.distance"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.distance
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Circle</td>
+                                        <td>半径①の円を角度②度描く</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.circle"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.circle
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dot</td>
+                                        <td>直径①の円を描く</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.dot"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.dot
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stamp</td>
+                                        <td>亀のスタンプを押す</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.stamp"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.stamp
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Speed</td>
+                                        <td>速度を①に変更する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.speed"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.speed
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PenDown</td>
+                                        <td>動いた線を引くようにする</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.pendown"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.pendown
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PenUp</td>
+                                        <td>動いた線を引かなくする</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.penup"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.penup
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>IsDown</td>
+                                        <td>動いた線を引くか①に代入する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.isdown"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.isdown
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PenSize</td>
+                                        <td>ペン先の太さを①にする</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.pensize"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.pensize
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Color</td>
+                                        <td>ペンと背景の色を①にする</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.color"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.color
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PenColor</td>
+                                        <td>ペンの色を①にする</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.pencolor"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.pencolor
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>FillColor</td>
+                                        <td>塗りつぶしの色を①にする</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.fillcolor"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.fillcolor
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>BGColor</td>
+                                        <td>背景色を①に変更する</td>
+                                        <td>オリジナル</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GetPenColor</td>
+                                        <td>ペンの色を①に代入する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.pencolor"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.pencolor
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>GetFillColor</td>
+                                        <td>塗りつぶしの色を①に代入する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.fillcolor"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.fillcolor
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>GetBGColor</td>
+                                        <td>背景色を①に代入する</td>
+                                        <td>オリジナル</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BeginFill</td>
+                                        <td>塗りつぶしを始める</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.begin_fill"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.begin_fill
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>EndFill</td>
+                                        <td>塗りつぶしを終える</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.end_fill"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.end_fill
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Filling</td>
+                                        <td>塗りつぶしするか①に代入する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.filling"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.filling
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ShowTurtle</td>
+                                        <td>カメを表示モードにする</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.showturtle"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.showturtle
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HideTurtle</td>
+                                        <td>カメを非表示モードにする</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.hideturtle"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.hideturtle
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>IsVisible</td>
+                                        <td>表示モードか①に代入する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.isvisible"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.isvisible
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>TurtleSize</td>
+                                        <td>亀の大きさを①にする</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.turtlesize"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.turtlesize
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Write</td>
+                                        <td>文字列①を大きさ②で書く</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.write"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.write
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bye</td>
+                                        <td>プログラムを終了する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.bye"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.bye
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ExitOnClick</td>
+                                        <td>クリックで終了する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/turtle.html#turtle.exitonclick"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                turtle.exitonclick
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bell</td>
+                                        <td>システムサウンドを鳴らす</td>
+                                        <td>オリジナル</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sleep</td>
+                                        <td>操作を①秒停止する</td>
+                                        <td>
+                                            <a
+                                                href="https://docs.python.org/ja/3/library/time.html#time.sleep"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                time.sleep
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Comment</td>
+                                        <td>実行されないコメント文<span style={{ float: "right" }}>※１</span></td>
+                                        <td>オリジナル</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Undefined</td>
+                                        <td>情報のない不明なクラス<span style={{ float: "right" }}>※２</span></td>
+                                        <td>オリジナル</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><strong>※１：このウィジェットはコメント用です。</strong></p>
+                            <p><strong>
+                                ※２：このウィジェットが表示されたときにはJsonファイルが破損していないか確認してください。
+                            </strong></p>
+                        </article>
+                    </div>
+                </section>
+            </Container>
+        </MainContent>
+    );
+}

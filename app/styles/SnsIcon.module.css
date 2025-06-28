@@ -1,0 +1,24 @@
+
+.snsIcon {
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: var(--text-color);
+}
+
+.githubIcon {
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.twitterIcon {
+    width: 1.2em;
+    height: 1.2em;
+    padding: 0.1em 0em;
+}
+
+.qiitaIcon {
+    width: 1.4em;
+    height: 1.4em;
+}

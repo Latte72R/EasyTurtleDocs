@@ -50,8 +50,8 @@ const Navigation = () => {
             title: "Download",
             children: [
                 { title: "ダウンロード", href: "/download" },
-                { title: "Windows搭載環境での実行", href: "/install-windows" },
-                { title: "Linux搭載環境での実行", href: "/install-linux" }
+                { title: "Windows環境での実行", href: "/install-windows" },
+                { title: "Linux環境での実行", href: "/install-linux" }
             ]
         },
         {

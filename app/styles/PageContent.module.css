@@ -1,63 +1,61 @@
-
 /* ===== LINKS ===== */
 .externalLink,
 .internalLink {
-  color: var(--primary-color);
-  text-decoration: underline;
-  transition: color 0.2s ease;
+    color: var(--primary-color);
+    text-decoration: underline;
+    transition: color 0.2s ease;
 }
 
 .externalLink:hover,
 .internalLink:hover {
-  color: var(--primary-color-hover);
+    color: var(--primary-color-hover);
 }
 
 /* ===== IMAGES ===== */
 .imageContainer {
-  margin: 2rem 0;
-  text-align: left;
+    margin: 2rem 0;
+    text-align: left;
 }
 
 .sectionImage {
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-  max-width: 100%;
-  height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    max-width: 100%;
+    height: auto;
 }
 
 /* ===== SOCIAL LINKS ===== */
 .socialLinksContainer {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .socialLink {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--social-bg);
-  border-radius: 20px;
-  text-decoration: none !important;
-  color: var(--social-text);
-  transition: all 0.2s ease;
-  border: 1px solid var(--social-border);
-  font-family: var(--font-noto-sans-mono), monospace;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--social-bg);
+    border-radius: 20px;
+    text-decoration: none !important;
+    color: var(--social-text);
+    transition: all 0.2s ease;
+    border: 1px solid var(--social-border);
+    font-family: var(--font-noto-sans-mono), monospace;
 }
 
 .socialLink:hover {
-  background-color: var(--social-hover-bg);
-  color: var(--primary-color);
-  box-shadow: 0 2px 8px var(--social-hover-shadow);
+    background-color: var(--social-hover-bg);
+    color: var(--primary-color);
+    box-shadow: 0 2px 8px var(--social-hover-shadow);
 }
 
 .socialIcon {
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 
-
 /* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 1024px) {
+@media (max-width: 1279px) {
 }

@@ -77,3 +77,9 @@
         font-size: 1.15rem;
     }
 }
+
+@media (min-width: 1920px) {
+    .container {
+        padding: 2rem 4rem;
+    }
+}

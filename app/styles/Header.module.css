@@ -162,3 +162,15 @@
         display: block;
     }
 }
+
+@media (min-width: 1440px) {
+    .navigationLink {
+        width: 14rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .navigationLink {
+        width: 16rem;
+    }
+}

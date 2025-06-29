@@ -4,21 +4,23 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    color: var(--text-color);
 }
 
 .githubIcon {
     width: 1.4em;
     height: 1.4em;
+    color: var(--sns-github-color);
 }
 
 .twitterIcon {
     width: 1.2em;
     height: 1.2em;
     padding: 0.1em 0em;
+    color: var(--sns-twitter-color);
 }
 
 .qiitaIcon {
     width: 1.4em;
     height: 1.4em;
+    color: var(--sns-qiita-color);
 }

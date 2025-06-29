@@ -40,11 +40,11 @@
   padding: 0.5rem 1rem;
   background-color: var(--social-bg);
   border-radius: 20px;
-  text-decoration: none;
+  text-decoration: none !important;
   color: var(--social-text);
-  font-weight: 500;
   transition: all 0.2s ease;
   border: 1px solid var(--social-border);
+  font-family: var(--font-noto-sans-mono), monospace;
 }
 
 .socialLink:hover {

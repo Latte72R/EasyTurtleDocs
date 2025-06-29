@@ -53,6 +53,10 @@
   --subnav-border: var(--color-border-light);
   --subnav-border-light: var(--color-very-light-gray);
   --subnav-hover-bg: var(--color-blue-very-light);
+
+  /* Slide menu colors */
+  --slide-menu-bg: rgba(224, 241, 242, 0.9);
+  --slide-menu-divider: var(--color-light-gray);
   
   /* Section colors */
   --section-background: var(--color-very-light-gray);
@@ -67,6 +71,11 @@
   --social-text: var(--color-medium-gray);
   --social-hover-bg: var(--color-blue-very-light);
   --social-hover-shadow: var(--alpha-blue-20);
+
+  /* SNS Icon colors */
+  --sns-github-color: rgb(52, 31, 116);
+  --sns-twitter-color: var(--text-color);
+  --sns-qiita-color: rgb(85, 197, 0);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -99,6 +108,10 @@
     --subnav-border: var(--color-dark-border);
     --subnav-border-light: var(--color-dark-border);
     --subnav-hover-bg: var(--color-dark-border);
+
+    /* Slide menu colors - dark mode */
+    --slide-menu-bg: rgba(19, 25, 42, 0.9);
+    --slide-menu-divider: var(--color-dark-border);
     
     /* Section colors - dark mode */
     --section-background: var(--color-medium-bg);
@@ -113,6 +126,11 @@
     --social-text: var(--color-medium-text);
     --social-hover-bg: var(--color-dark-blue);
     --social-hover-shadow: var(--alpha-blue-25-dark);
+
+    /* SNS Icon colors - dark mode */
+    --sns-github-color: var(--text-color);
+    --sns-twitter-color: var(--text-color);
+    --sns-qiita-color: var(--text-color);
   }
 }
 

@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Noto_Sans_JP, Noto_Sans_Mono } from 'next/font/google'
-import "./globals.css";
+import "@/app/styles/globals.css";
 
 const notoSansJp = Noto_Sans_JP({
   subsets: ['latin'],
@@ -29,7 +29,6 @@ const notoSansMono = Noto_Sans_Mono({
 })
 
 export const metadata: Metadata = {
-  // Vercel以外のホスティングサービスを利用する場合はmetadataBaseを設定する必要がある
   metadataBase: new URL("https://easyturtle.latte72.net"),
   title: {
     default: "EasyTurtle",
@@ -50,8 +49,23 @@ export const metadata: Metadata = {
     siteName: "EasyTurtle",
     locale: "ja_JP",
     type: "website",
+    images: [
+      {
+        url: "https://easyturtle.latte72.net/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "EasyTurtle OG Image",
+      },
+    ],
   },
-  appleWebApp: true,
+  twitter: {
+    card: "summary_large_image",
+    title: "EasyTurtle",
+    description: "Easily handle Turtle module using GUI",
+    site: "@Latte72R",
+    creator: "@Latte72R",
+    images: ["https://easyturtle.latte72.net/og-image.png"],
+  },
 };
 
 export const viewport: Viewport = {
@@ -60,6 +74,7 @@ export const viewport: Viewport = {
   maximumScale: 1,
   userScalable: false,
   viewportFit: 'cover',
+  colorScheme: 'light dark',
 };
 
 export default function RootLayout({
@@ -69,13 +84,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" suppressHydrationWarning>
-      <head>
-        <meta name="color-scheme" content="dark" />
-        <meta property="og:image" content="https://easyturtle.latte72.net/og-image.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@Latte72R" />
-        <meta name="twitter:creator" content="@Latte72R" />
-      </head>
       <body className={`${notoSansJp.variable} ${notoSansMono.variable}`}>
         {children}
       </body>

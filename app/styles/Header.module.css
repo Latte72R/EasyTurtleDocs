@@ -1,110 +1,112 @@
 /* ===== HEADER ===== */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: var(--nav-background);
-  box-shadow: var(--shadow);
-  display: flex;
-  margin-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    z-index: 100;
+    background-color: var(--nav-background);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
 }
 
 /* ===== NAVIGATION ===== */
 .navigation {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .navigationList {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: var(--nav-background);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--nav-background);
 }
 
 .navigationItemHome {
-  margin-right: auto;
-  margin-bottom: 0;
-  position: relative;
+    margin-right: auto;
+    margin-bottom: 0;
+    position: relative;
 }
 
 .navigationItemHome .navigationLink {
-  font-size: 1.3rem;
-  font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .navigationItem {
-  margin-bottom: 0;
-  border-left: 1px solid var(--nav-border);
-  position: relative;
+    margin-bottom: 0;
+    border-left: 1px solid var(--nav-border);
+    position: relative;
 }
 
-.navigationItem:hover .subNavigationList, 
+.navigationItem:hover .subNavigationList,
 .subNavigationList:hover {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 .navigationLink {
-  display: block;
-  width: 14rem;
-  height: 3rem;
-  text-align: center;
-  color: var(--nav-text);
-  font-size: 1rem;
-  line-height: 3rem;
-  text-decoration: none;
-  transition: color 0.2s ease;
-  cursor: pointer;
-  box-sizing: border-box;
+    display: block;
+    width: 14rem;
+    height: 3rem;
+    text-align: center;
+    color: var(--nav-text);
+    font-size: 1rem;
+    line-height: 3rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 .navigationLink:hover {
-  color: var(--nav-text-hover);
-  background-color: var(--nav-hover-bg);
+    color: var(--nav-text-hover);
+    background-color: var(--nav-hover-bg);
 }
 
 .subNavigationList {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 280px;
-  width: max-content;
-  background-color: var(--subnav-background);
-  box-shadow: var(--shadow);
-  border-radius: 0 0 8px 8px;
-  overflow: hidden;
-  z-index: 200;
-  border: 1px solid var(--subnav-border);
-  border-top: none;
-  margin-bottom: 0;
-  padding-left:0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.15s ease-in-out;
-  transition-delay: 0s;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 14rem;
+    width: max-content;
+    background-color: var(--subnav-background);
+    box-shadow: var(--shadow);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    z-index: 200;
+    border: 1px solid var(--subnav-border);
+    border-top: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.15s ease-in-out;
+    transition-delay: 0s;
 }
 
 .subNavigationItem {
-  list-style: none;
-  white-space: nowrap;
+    list-style: none;
+    white-space: nowrap;
 }
 
 .subNavigationLink {
-  display: block;
-  padding: 0.875rem 1.25rem;
-  color: var(--subnav-text);
-  text-decoration: none;
-  border-top: 1px solid var(--subnav-border-light);
-  font-size: 0.9rem;
-  transition: all 0.2s ease;
-  line-height: 1.4;
+    display: block;
+    padding: 0.875rem 1.25rem;
+    color: var(--subnav-text);
+    text-decoration: none;
+    border-top: 1px solid var(--subnav-border-light);
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    line-height: 1.4;
 }
 
 .subNavigationLink:hover {
-  background-color: var(--subnav-hover-bg);
-  color: var(--primary-color);
-  padding-left: 1.5rem;
+    background-color: var(--subnav-hover-bg);
+    color: var(--primary-color);
+    padding-left: 1.5rem;
 }
 
 /* ===== HAMBURGER MENU ===== */
@@ -136,26 +138,27 @@
 .hamburgerMenu.open .border2 {
     opacity: 0;
 }
-  
+
 .hamburgerMenu.open .border3 {
     transform: translate(-102px, -102px) rotate(-45deg);
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
-  .navigationItem, .subNavigationItem {
-    display: none;
-  }
+    .navigationItem,
+    .subNavigationItem {
+        display: none;
+    }
 
-  .navigation {
-    margin-left: 1rem;
-  }
+    .navigation {
+        margin-left: 1rem;
+    }
 
-  .navigationItemHome .navigationLink {
-    width: 100%;
-  }
+    .navigationItemHome .navigationLink {
+        width: calc(100% + 1rem);
+    }
 
-  .hamburgerMenu {
-    display: block;
-  }
+    .hamburgerMenu {
+        display: block;
+    }
 }

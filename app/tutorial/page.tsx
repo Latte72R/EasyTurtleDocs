@@ -28,7 +28,7 @@ export default function TutorialPage() {
                     <div className={styles.imageContainer}>
                         <Image
                             className={styles.sectionImage}
-                            src="/Photos/photo2.png"
+                            src="/Photos/photo2.webp"
                             alt="ウィジェット追加後"
                             width={600}
                             height={300}
@@ -41,7 +41,7 @@ export default function TutorialPage() {
                     <div className={styles.imageContainer}>
                         <Image
                             className={styles.sectionImage}
-                            src="/Photos/photo13.png"
+                            src="/Photos/photo13.webp"
                             alt="ウィジェット右クリックメニュー"
                             width={600}
                             height={300}
@@ -135,7 +135,7 @@ export default function TutorialPage() {
                     <div className={styles.imageContainer}>
                         <Image
                             className={styles.sectionImage}
-                            src="/Photos/photo4.png"
+                            src="/Photos/photo4.webp"
                             alt="タブバー"
                             width={600}
                             height={300}
@@ -161,7 +161,7 @@ export default function TutorialPage() {
                     <div className={styles.imageContainer}>
                         <Image
                             className={styles.sectionImage}
-                            src="/Photos/photo3.png"
+                            src="/Photos/photo3.webp"
                             alt="メニューバー"
                             width={600}
                             height={300}
@@ -364,7 +364,7 @@ export default function TutorialPage() {
                     <div className={styles.imageContainer}>
                         <Image
                             className={styles.sectionImage}
-                            src="/Photos/photo14.png"
+                            src="/Photos/photo14.webp"
                             alt="設定画面"
                             width={600}
                             height={300}

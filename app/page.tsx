@@ -60,7 +60,7 @@ const AboutSection = () => (
         </p>
         <div className={styles.imageContainer}>
           <Image
-            src="/Photos/photo11.png"
+            src="/Photos/photo11.webp"
             alt="EasyTurtle スクリーンショット"
             width={600}
             height={300}
